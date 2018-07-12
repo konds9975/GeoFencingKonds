@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA06C8CB20F746EA00D818E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06C8CA20F746EA00D818E8 /* AppDelegate.swift */; };
-		DA06C8CD20F746EA00D818E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06C8CC20F746EA00D818E8 /* ViewController.swift */; };
 		DA06C8D020F746EA00D818E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA06C8CE20F746EA00D818E8 /* Main.storyboard */; };
 		DA06C8D320F746EA00D818E8 /* GeoFencingKonds.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA06C8D120F746EA00D818E8 /* GeoFencingKonds.xcdatamodeld */; };
 		DA06C8D520F746EC00D818E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA06C8D420F746EC00D818E8 /* Assets.xcassets */; };
 		DA06C8D820F746EC00D818E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA06C8D620F746EC00D818E8 /* LaunchScreen.storyboard */; };
 		DA06C8E320F746EC00D818E8 /* GeoFencingKondsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06C8E220F746EC00D818E8 /* GeoFencingKondsTests.swift */; };
 		DA06C8EE20F746EC00D818E8 /* GeoFencingKondsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06C8ED20F746EC00D818E8 /* GeoFencingKondsUITests.swift */; };
+		DA06C8FD20F7475200D818E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06C8FB20F7475100D818E8 /* AppDelegate.swift */; };
+		DA06C8FE20F7475200D818E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06C8FC20F7475200D818E8 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +36,6 @@
 
 /* Begin PBXFileReference section */
 		DA06C8C720F746EA00D818E8 /* GeoFencingKonds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoFencingKonds.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA06C8CA20F746EA00D818E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DA06C8CC20F746EA00D818E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DA06C8CF20F746EA00D818E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA06C8D220F746EA00D818E8 /* GeoFencingKonds.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GeoFencingKonds.xcdatamodel; sourceTree = "<group>"; };
 		DA06C8D420F746EC00D818E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +47,8 @@
 		DA06C8E920F746EC00D818E8 /* GeoFencingKondsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoFencingKondsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA06C8ED20F746EC00D818E8 /* GeoFencingKondsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoFencingKondsUITests.swift; sourceTree = "<group>"; };
 		DA06C8EF20F746EC00D818E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA06C8FB20F7475100D818E8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DA06C8FC20F7475200D818E8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +99,8 @@
 		DA06C8C920F746EA00D818E8 /* GeoFencingKonds */ = {
 			isa = PBXGroup;
 			children = (
-				DA06C8CA20F746EA00D818E8 /* AppDelegate.swift */,
-				DA06C8CC20F746EA00D818E8 /* ViewController.swift */,
+				DA06C8FB20F7475100D818E8 /* AppDelegate.swift */,
+				DA06C8FC20F7475200D818E8 /* ViewController.swift */,
 				DA06C8CE20F746EA00D818E8 /* Main.storyboard */,
 				DA06C8D420F746EC00D818E8 /* Assets.xcassets */,
 				DA06C8D620F746EC00D818E8 /* LaunchScreen.storyboard */,
@@ -196,6 +196,12 @@
 				TargetAttributes = {
 					DA06C8C620F746EA00D818E8 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					DA06C8DD20F746EC00D818E8 = {
 						CreatedOnToolsVersion = 9.4;
@@ -259,9 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA06C8CD20F746EA00D818E8 /* ViewController.swift in Sources */,
+				DA06C8FE20F7475200D818E8 /* ViewController.swift in Sources */,
+				DA06C8FD20F7475200D818E8 /* AppDelegate.swift in Sources */,
 				DA06C8D320F746EA00D818E8 /* GeoFencingKonds.xcdatamodeld in Sources */,
-				DA06C8CB20F746EA00D818E8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UMUY72KH99;
 				INFOPLIST_FILE = GeoFencingKonds/Info.plist;
@@ -443,6 +450,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fortune4.GeoFencingKonds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -452,6 +460,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UMUY72KH99;
 				INFOPLIST_FILE = GeoFencingKonds/Info.plist;
